@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Screenshot.png" alt="bind-my-tabs" width="360">
+</p>
+
 # bind-my-tabs
 
 Minimalist, zero-overhead tab switching daemon for Brave / Chromium.
@@ -5,7 +9,6 @@ Minimalist, zero-overhead tab switching daemon for Brave / Chromium.
 ## Architecture
 
 - Pure Manifest V3 `chrome.commands` backend
-- 0% idle CPU, zero memory overhead
 - No injected content scripts into DOM
 
 ## Install
