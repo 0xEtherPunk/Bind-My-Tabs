@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 320px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Ubuntu Mono', 'Consolas', monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  user-select: none;
+}
+
+.terminal {
+  border: 1px solid #30363d;
+  background-color: #0d1117;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+  padding: 6px 10px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.title {
+  margin-left: auto;
+  font-size: 11px;
+  color: #8b949e;
+}
+
+.content {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.prompt {
+  color: #58a6ff;
+  margin-top: 4px;
+}
+
+.user { color: #7ee787; font-weight: bold; }
+.path { color: #d2a8ff; }
+
+.tag {
+  font-weight: bold;
+}
+
+.tag.ok { color: #7ee787; }
+.tag.info { color: #58a6ff; }
+
+.binding {
+  display: flex;
+  justify-content: space-between;
+  background-color: #161b22;
+  border: 1px solid #21262d;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.cmd { color: #f0883e; }
+.key { color: #79c0ff; font-weight: bold; }
+
+.actions {
+  margin-top: 8px;
+}
+
+.btn {
+  width: 100%;
+  padding: 6px 8px;
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  font-family: inherit;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.btn:hover {
+  background-color: #30363d;
+  border-color: #58a6ff;
+  color: #58a6ff;
+}

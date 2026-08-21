@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bind-my-tabs</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="terminal">
+    <div class="bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">bind-my-tabs v1.1.0</span>
+    </div>
+    <div class="content">
+      <div class="line prompt"><span class="user">user@brave</span>:<span class="path">~</span>$ status</div>
+      <div class="line out"><span class="tag ok">[OK]</span> daemon running</div>
+      <div class="line out"><span class="tag info">[TABS]</span> <span id="tab-count">...</span> tabs open</div>
+      <div class="line prompt"><span class="user">user@brave</span>:<span class="path">~</span>$ bindings</div>
+      <div class="line binding"><span class="cmd">next-tab</span> <span class="key" id="key-next">...</span></div>
+      <div class="line binding"><span class="cmd">prev-tab</span> <span class="key" id="key-prev">...</span></div>
+      <div class="actions">
+        <button id="btn-cfg" class="btn">$ brave://extensions/shortcuts</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
