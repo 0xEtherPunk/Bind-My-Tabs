@@ -2,6 +2,7 @@
 
 Minimalist tab switching daemon for Brave / Chromium.
 
+
 <p align="center">
   <img src="Screenshot.png" alt="bind-my-tabs" width="360">
 </p>
