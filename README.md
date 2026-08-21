@@ -1,10 +1,10 @@
-<p align="center">
-  <img src="Screenshot.png" alt="bind-my-tabs" width="360">
-</p>
-
 # bind-my-tabs
 
 Minimalist, zero-overhead tab switching daemon for Brave / Chromium.
+
+<p align="center">
+  <img src="Screenshot.png" alt="bind-my-tabs" width="360">
+</p>
 
 ## Architecture
 
