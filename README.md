@@ -24,3 +24,5 @@ Minimalist tab switching daemon for Brave / Chromium.
 Open `brave://extensions/shortcuts` and bind commands:
 - `next-tab`
 - `prev-tab`
+- `history-back`
+- `history-forward`

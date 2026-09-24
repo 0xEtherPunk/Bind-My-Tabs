@@ -1,10 +1,11 @@
 {
   "manifest_version": 3,
   "name": "bind-my-tabs",
-  "version": "1.1.0",
-  "description": "Minimalist tab switching daemon via browser commands.",
+  "version": "1.2.0",
+  "description": "Minimalist tab switching and history daemon via browser commands.",
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "background": {
     "service_worker": "background/service-worker.js"
@@ -23,6 +24,20 @@
         "mac": "Alt+K"
       },
       "description": "Switch to previous tab"
+    },
+    "history-back": {
+      "suggested_key": {
+        "default": "Ctrl+Z",
+        "mac": "Command+Z"
+      },
+      "description": "Go back in active tab history"
+    },
+    "history-forward": {
+      "suggested_key": {
+        "default": "Ctrl+X",
+        "mac": "Command+X"
+      },
+      "description": "Go forward in active tab history"
     }
   },
   "action": {
