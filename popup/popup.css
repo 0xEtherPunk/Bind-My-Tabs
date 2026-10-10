@@ -57,13 +57,19 @@ body {
   gap: 6px;
 }
 
-.prompt {
-  color: #58a6ff;
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 4px;
 }
 
-.user { color: #7ee787; font-weight: bold; }
-.path { color: #d2a8ff; }
+.cmd-label {
+  color: #58a6ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
 
 .tag {
   font-weight: bold;
