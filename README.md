@@ -10,18 +10,18 @@ Minimalist tab switching daemon for Brave / Chromium.
 
 ## Architecture
 
-- Pure Manifest V3 `chrome.commands` backend
-- No injected content scripts into DOM
+- Manifest V3 backend (`chrome.commands` + keyboard event capture)
+- Prevents default shortcut conflicts (e.g. `Ctrl+O` open file, `Ctrl+L` omnibox) across Chromium browsers
 
 ## Install
 
-1. Open `brave://extensions`
+1. Open `brave://extensions` (or `chrome://extensions`)
 2. Enable **Developer mode**
 3. Click **Load unpacked** and select this directory
 
 ## Configure Shortcuts
 
-Open `brave://extensions/shortcuts` and bind commands:
+Open `brave://extensions/shortcuts` (or `chrome://extensions/shortcuts`):
 - `next-tab`
 - `prev-tab`
 - `history-back`

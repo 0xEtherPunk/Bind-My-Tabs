@@ -163,6 +163,42 @@ input:checked + .slider:before {
   margin-top: 8px;
 }
 
+.actions-split {
+  display: flex;
+  align-items: center;
+  background-color: #202020;
+  border: 1px solid #282828;
+  border-radius: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.btn-split {
+  flex: 1;
+  padding: 6px 4px;
+  background: transparent;
+  border: none;
+  color: #F8F8F2;
+  font-family: inherit;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-split:hover {
+  background-color: #282828;
+  color: #58a6ff;
+}
+
+.split-divider {
+  width: 1px;
+  height: 16px;
+  background-color: #383838;
+  flex-shrink: 0;
+}
+
 .btn {
   width: 100%;
   padding: 6px 8px;
@@ -182,3 +218,4 @@ input:checked + .slider:before {
   border-color: #F92672;
   color: #F92672;
 }
+

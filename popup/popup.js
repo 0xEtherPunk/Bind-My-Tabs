@@ -4,7 +4,8 @@ const elPrev = document.getElementById('key-prev');
 const elHistBack = document.getElementById('key-history-back');
 const elHistFwd = document.getElementById('key-history-forward');
 const toggleHistory = document.getElementById('toggle-history');
-const btnCfg = document.getElementById('btn-cfg');
+const btnBrave = document.getElementById('btn-cfg-brave');
+const btnChrome = document.getElementById('btn-cfg-chrome');
 
 const init = async () => {
   try {
@@ -32,14 +33,18 @@ const init = async () => {
   } catch (err) {}
 };
 
-toggleHistory.addEventListener('change', async () => {
+toggleHistory?.addEventListener('change', async () => {
   try {
     await chrome.storage.local.set({ historyNavEnabled: toggleHistory.checked });
   } catch (err) {}
 });
 
-btnCfg.addEventListener('click', () => {
+btnBrave?.addEventListener('click', () => {
   chrome.tabs.create({ url: 'brave://extensions/shortcuts' });
+});
+
+btnChrome?.addEventListener('click', () => {
+  chrome.tabs.create({ url: 'chrome://extensions/shortcuts' });
 });
 
 document.addEventListener('DOMContentLoaded', init);
